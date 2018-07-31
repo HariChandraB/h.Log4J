@@ -14,7 +14,9 @@ public class Logger1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		log.debug("Setting chrome driver property");
-		System.setProperty("webdriver.chrome.driver", "C:\\work\\chromedriver.exe");
+		String path = "D:\\Selenium_drivers\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", path);
+//		System.setProperty("webdriver.chrome.driver", "C:\\work\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		log.info("Window Maximized");
